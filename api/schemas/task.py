@@ -1,3 +1,5 @@
+# このファイルはtask_schemaで参照できる
+
 from pydantic import BaseModel, Field
 
 class TaskBase(BaseModel):
@@ -17,4 +19,4 @@ class Task(TaskBase):
     done: bool = Field(False, description="完了フラグ")
 
     class Config:
-        orm_mode = True
+        orm_mode = True 
