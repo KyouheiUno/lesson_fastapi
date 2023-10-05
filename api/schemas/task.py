@@ -19,4 +19,4 @@ class Task(TaskBase):
     done: bool = Field(False, description="完了フラグ")
 
     class Config:
-        orm_mode = True 
+        orm_mode = True     
