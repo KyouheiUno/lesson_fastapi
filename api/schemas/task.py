@@ -3,7 +3,7 @@
 from pydantic import BaseModel, Field
 
 class TaskBase(BaseModel):
-    title: str | None = Field(None, example="クリーニングをとりに行く")
+    title: str | None = Field(None, example="クリーニングをとりにいく")
 
 class TaskCreate(TaskBase):
     pass
@@ -19,4 +19,4 @@ class Task(TaskBase):
     done: bool = Field(False, description="完了フラグ")
 
     class Config:
-        orm_mode = True     
+        orm_mode = True
